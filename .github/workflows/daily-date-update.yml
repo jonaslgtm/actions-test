@@ -72,7 +72,7 @@ jobs:
           git add README.md
           
           # 提交更改
-          git commit -m "自动更新日期: $(date +'%Y-%m-%d')"
+          git commit -m "🤖 Daily Auto Update"
       
       # 步骤 6: 推送更改
       - name: Push changes
