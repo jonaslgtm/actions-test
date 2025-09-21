@@ -5,7 +5,8 @@ name: Daily Date Update
 on:
   # 1. 定时触发 - 每天 UTC 时间 00:00 (北京时间 08:00) 运行
   schedule:
-    - cron: '0 0 * * *'  #  cron 语法: 分 时 日 月 周
+      - cron: '0 0 * * *' # cron 语法: 分 时 日 月 周
+        timezone: Asia/Shanghai # 设置时区为北京时间（Asia/Shanghai）
     # 注意: GitHub Actions 使用 UTC 时间
     # 如果要调整到特定时间运行，可以修改这个 cron 表达式
   
