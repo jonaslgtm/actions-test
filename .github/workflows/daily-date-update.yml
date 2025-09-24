@@ -32,6 +32,10 @@ jobs:
         with:
           # 获取完整历史记录，以便能够推送更改
           fetch-depth: 0
+          
+      # 设置虚拟环境的时区为北京时间
+      - name: Set timezone to Asia/Shanghai
+        run: sudo timedatectl set-timezone Asia/Shanghai
       
       # 步骤 2: 设置 Python 环境 (用于日期处理)
       - name: Setup Python
